@@ -1,13 +1,18 @@
 package common.log;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import java.io.IOException;
+import java.util.Properties;
+
 public class LogUtil {
     private static Logger logger ;
+
     static {
         logger = Logger.getLogger(LogUtil.class);
-        String logConfigPath = System.getProperty("user.dir")+"/config/log4j.properties";
+        String logConfigPath = "src/main/resources/config/log4j.properties";
         PropertyConfigurator.configure(logConfigPath);
     }
 
