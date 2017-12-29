@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HoteliOStestSuite" parallel="false">
+    <test name="RegressionTest" preserve-order="true">
+        <classes>
+            <class name="common.log.LogUtilTest">
+            </class>
+        </classes>
+    </test>
+    <listeners>
+    </listeners>
+</suite>
